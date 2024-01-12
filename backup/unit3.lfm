@@ -1,0 +1,367 @@
+object Form3: TForm3
+  Left = 719
+  Height = 569
+  Top = 343
+  Width = 701
+  Caption = 'Data Master'
+  ClientHeight = 569
+  ClientWidth = 701
+  DesignTimePPI = 120
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -33
+  Font.Name = 'Showcard Gothic'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  OnCreate = FormCreate
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 64
+    Height = 42
+    Top = 8
+    Width = 372
+    Caption = 'APLIKASI DATA BARANG'
+    ParentColor = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 32
+    Height = 200
+    Top = 296
+    Width = 656
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Name = 'SimSun'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 32
+    Height = 31
+    Top = 240
+    Width = 94
+    Caption = 'Tambah'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'SimSun-ExtB'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 296
+    Height = 31
+    Top = 240
+    Width = 94
+    Caption = 'Hapus'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'SimSun-ExtB'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 168
+    Height = 31
+    Top = 240
+    Width = 94
+    Caption = 'Ubah'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'SimSun-ExtB'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 3
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 32
+    Height = 31
+    Top = 504
+    Width = 616
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 31
+    ClientWidth = 616
+    Options = []
+    TabOrder = 4
+  end
+  object Button4: TButton
+    Left = 560
+    Height = 31
+    Top = 240
+    Width = 94
+    Caption = 'Simpan'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'SimSun-ExtB'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 5
+  end
+  object Button5: TButton
+    Left = 168
+    Height = 22
+    Top = 80
+    Width = 142
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Segoe UI Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Label2: TLabel
+    Left = 32
+    Height = 22
+    Top = 80
+    Width = 81
+    Caption = 'ID Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 32
+    Height = 22
+    Top = 112
+    Width = 69
+    Caption = 'Kategori'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 32
+    Height = 22
+    Top = 144
+    Width = 107
+    Caption = 'Nama Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 32
+    Height = 22
+    Top = 176
+    Width = 124
+    Caption = 'Gambar Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label5Click
+  end
+  object Label6: TLabel
+    Left = 424
+    Height = 22
+    Top = 80
+    Width = 87
+    Caption = 'Harga Beli'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 424
+    Height = 22
+    Top = 112
+    Width = 85
+    Caption = 'Harga Jual'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 424
+    Height = 22
+    Top = 176
+    Width = 96
+    Caption = 'Stok Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 424
+    Height = 22
+    Top = 144
+    Width = 94
+    Caption = 'ID Kategori'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button6: TButton
+    Left = 168
+    Height = 22
+    Top = 114
+    Width = 142
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Segoe UI Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 7
+  end
+  object Button7: TButton
+    Left = 168
+    Height = 22
+    Top = 144
+    Width = 142
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Segoe UI Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 8
+  end
+  object Button8: TButton
+    Left = 168
+    Height = 22
+    Top = 176
+    Width = 142
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Segoe UI Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 9
+  end
+  object Button9: TButton
+    Left = 528
+    Height = 22
+    Top = 80
+    Width = 142
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Segoe UI Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 10
+  end
+  object Button10: TButton
+    Left = 528
+    Height = 22
+    Top = 112
+    Width = 142
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Segoe UI Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 11
+  end
+  object Button11: TButton
+    Left = 528
+    Height = 22
+    Top = 144
+    Width = 142
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Segoe UI Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 12
+  end
+  object Button12: TButton
+    Left = 528
+    Height = 22
+    Top = 176
+    Width = 142
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Segoe UI Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 13
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'barang_db'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 'C:\Users\Alvian Saputra\Downloads\mysql-5.7.44-win32\mysql-5.7.44-win32\lib\libmysql.dll'
+    Left = 80
+    Top = 416
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM data_barang'
+    )
+    Params = <>
+    Left = 192
+    Top = 416
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 304
+    Top = 416
+  end
+end

@@ -1,0 +1,18 @@
+object Form4: TForm4
+  Left = 521
+  Height = 240
+  Top = 94
+  Width = 320
+  Caption = 'Transaksi'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 82
+    Height = 15
+    Top = 61
+    Width = 34
+    Caption = 'Label1'
+    ParentColor = False
+  end
+end
