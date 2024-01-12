@@ -1,5 +1,7 @@
 Nama  : Alvian Saputra Pratama
+
 Nim   : 312110274
+
 Kelas : TI.21.A.3
 
 Output Data Barang
